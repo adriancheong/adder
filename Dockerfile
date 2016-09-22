@@ -1,5 +1,6 @@
 FROM microsoft/dotnet:latest
 COPY src/Adder/ /root/
+RUN cd /root/Adder
 RUN dotnet restore
 RUN dotnet build
 RUN dotnet publish
