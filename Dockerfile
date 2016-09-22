@@ -1,5 +1,5 @@
 FROM microsoft/dotnet:latest
-COPY src/Adder/ /root/
+COPY src/Adder /root/Adder
 RUN cd /root/Adder
 RUN dotnet restore
 RUN dotnet build
