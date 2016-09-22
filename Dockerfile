@@ -1,4 +1,5 @@
 FROM microsoft/dotnet:latest
+COPY src/Adder/ /root/
 RUN ["dotnet", "restore", "src/Adder/"] 
 RUN ["dotnet", "build", "src/Adder/"] 
 RUN ["dotnet", "publish", "src/Adder/"] 
