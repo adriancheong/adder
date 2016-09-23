@@ -14,7 +14,7 @@ namespace Adder
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseUrls("http://*:6000/")
+                .UseUrls("http://*:5010/")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
