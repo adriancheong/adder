@@ -13,6 +13,7 @@ namespace Adder.Controllers
         [HttpGet]
         public int Get(int param1, int param2)
         {
+            Console.WriteLine("Add API called with values " + param1 + " and " + param2);
             return param1 + param2;
         }
     }
